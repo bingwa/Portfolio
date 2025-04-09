@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" lang="en">
-        <title>BRIAN MUNYAO</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico ">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">                    
-    </head>
-    <body>
-        <div class="top-container">
-            <img class="top-cloud"  src="cloud.png" alt="Background">
-            <h1>I'm Brian</h1>
-            <h2><p>A <span class="pro">pro</span>grammer.</p></h2>
-            <img class="bottom-cloud" src="cloud.png" alt="bottom cloud">
-            <img class="mountain" src="11147003.png" alt="Background">
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIAN MUNYAO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse montserrat" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="middle-section">
-            <div class="profile">
-                <img class="profile-image" src="WhatsApp Image 2025-03-03 at 13.57.20_46c692ca.jpg" alt="image">
-                <h2>Hello.</h2>
-                <p class="intro-line"><em>Founder of <strong>MunTech Inc.</strong> and CEO</em></p>
-            </div>
-            <hr>
-            <div class="skills">
-                <h3>SKILLS</h3>
-                <div class="skill-row">
-                <img class="skill-image" src="code.png" alt="code logo">
-                <h3> Fullstack development</h3>
-                <p>As a fullstack web developer, I build complete web applications from front to back. I handle everything from designing intuitive user interfaces with HTML, CSS, and JavaScript, to developing robust server-side logic and database management with technologies like Node.js, Python, and SQL. This comprehensive approach allows me to create seamless and scalable web solutions, ensuring a cohesive and efficient user experience</p>
-            </div>
-            <div class="skill-row">
-                <img class="data-image" src="18135.png" alt="Data pic">
-                <h3>Data Science & Analytics</h3>
-                <p class="data-desc">Data analysis, machine learning, and data visualization are at the core of my skillset. I specialize in turning complex data into clear, impactful results. I'm passionate about building predictive models and delivering data-driven solutions that address business challenges and drive strategic growth</p>
+    </nav>
+
+    <div class="top-container">
+        <img class="top-cloud" src="cloud.png" alt="Background">
+        <h1>I'm Brian</h1>
+        <h2><p>A <span class="pro">pro</span>grammer.</p></h2>
+        <img class="bottom-cloud" src="cloud.png" alt="bottom cloud">
+        <img class="mountain" src="11147003.png" alt="Background">
+        <!-- Added animated code background -->
+        <div class="code-background"></div>
+    </div>
+
+    <div class="middle-section">
+        <div class="profile" id="profile">
+            <img class="profile-image" src="WhatsApp Image 2025-03-03 at 13.57.20_46c692ca.jpg" alt="image">
+            <h2>Hello.</h2>
+            <p class="intro-line">Motivated and detail-oriented Web Developer and Software Engineer with hands-on experience in front-end (HTML, CSS, JavaScript, ReactJS) and back-end development (PHP, Python, C++). Proficient in database management systems (Microsoft SQL Server) and skilled in problem-solving, teamwork, and leadership. Passionate about building scalable web applications and staying updated with emerging technologies.</p>
+        </div>
+        <hr>
+
+        <!-- Skills Section with Carousel -->
+        <div class="skills" id="skills">
+            <h3 class="montserrat">SKILLS</h3>
+            <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Fullstack Development -->
+                    <div class="carousel-item active">
+                        <div class="skill-row">
+                            <img class="skill-image" src="code.png" alt="code logo">
+                            <h3>Fullstack Development</h3>
+                            <p>As a fullstack web developer, I build complete web applications from front to back. I handle everything from designing intuitive user interfaces with HTML, CSS, and JavaScript, to developing robust server-side logic and database management with technologies like Node.js, Python, and SQL. This comprehensive approach allows me to create seamless and scalable web solutions, ensuring a cohesive and efficient user experience.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Data Science & Analytics -->
+                    <div class="carousel-item">
+                        <div class="skill-row">
+                            <img class="data-image" src="18135.png" alt="Data pic">
+                            <h3>Data Science & Analytics</h3>
+                            <p>Data analysis, machine learning, and data visualization are at the core of my skillset. I specialize in turning complex data into clear, impactful results. I'm passionate about building predictive models and delivering data-driven solutions that address business challenges and drive strategic growth.</p>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <hr>
-        <div class="contact-me">
-            <h3>Get In Touch</h3>
-            <p class="contact-message">Contact me through any of my socials or send me an email.</p>
-            <a class="btn" href="mailto:munyaobryan6@gmail.com">CONTACT ME</a>
+
+        <!-- Modernized Contact Section -->
+        <div class="contact-me" id="contact-me">
+            <h3 class="montserrat contact-head ">Get In Touch</h3>
+            <p class="contact-message">Let's work together! Send me a message, and I'll get back to you as soon as possible.</p>
+            <form class="contact-form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
-        
-        <div class="bottom-section">
-            <a class="footer-link" href="https://www.linkedin.com">LinkedIn</a>
-            <a class="footer-link" href="https://twitter.com">X</a>
-            <p> 2025 Brian Munyao.</p>
-        </div>
-        
-    </body>
+    </div>
+
+    <div class="bottom-section">
+        <a class="footer-link" href="https://www.linkedin.com">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com">X</a>
+        <p> 2025 Brian Munyao.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sites.js"></script>
+</body>
 </html>
